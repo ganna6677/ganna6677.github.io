@@ -50,6 +50,35 @@
 <body>
     <!-- Particles.js Hero Section -->
     <div id="particles-js"></div>
+
+    <!-- Navigation Bar with Sections Links & Color Switcher -->
+    <nav class="fixed top-0 left-0 w-full bg-gray-900 text-white py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">Portfolio</h1>
+            
+            <!-- Sections Links -->
+            <div class="flex space-x-6">
+                <a href="#about" class="text-lg hover:text-blue-500" data-color="blue">About</a>
+                <a href="#education" class="text-lg hover:text-blue-500" data-color="blue">Education</a>
+                <a href="#skills" class="text-lg hover:text-blue-500" data-color="blue">Skills</a>
+                <a href="#work-experience" class="text-lg hover:text-blue-500" data-color="blue">Experience</a>
+                <a href="#projects" class="text-lg hover:text-blue-500" data-color="blue">Projects</a>
+                <a href="#offered-services" class="text-lg hover:text-blue-500" data-color="blue">Offered Services</a>
+                <a href="#contact-me" class="text-lg hover:text-blue-500" data-color="blue">Contact</a>
+            </div>
+
+            <!-- Color Switcher -->
+            <select id="color-picker" class="px-4 py-2 bg-gray-700 text-white rounded-lg">
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Particles.js Hero Section -->
+    <div id="particles-js"></div>
     <header class="hero-content">
         <h1 class="text-5xl font-bold animate__animated animate__fadeInDown">Ganna Allah Saleh Abouelatta Saleh</h1>
         <p class="text-lg mt-4 animate__animated animate__fadeInUp">Data Analyst & Business Analyst</p>
@@ -61,17 +90,17 @@
     </header>
 
     <!-- About -->
-    <section class="section">
-        <h2 class="text-3xl font-semibold">About</h2>
+    <section id="about" class="section">
+        <h2 class="text-3xl font-semibold color-theme">About</h2>
         <p class="mt-4">
-            Business Analyst student with hands-on experience as a Data Analyst. I specialize in using tools like Power BI, Python, R, and Excel to analyze and visualize data. Skilled in predictive analytics, statistical modeling, and SQL database management, I excel in transforming complex datasets into actionable insights. My ability to collaborate effectively and solve real-world business challenges makes me a valuable professional in the analytics domain.
+            As a Business Analyst student with hands-on experience in Data Analytics, I specialize in transforming complex data into actionable insights. Using tools like Power BI, Python, R, Excel, and SQL, I uncover trends, optimize processes, and drive strategic decisions. My expertise in predictive analytics and statistical modeling enables businesses to solve real-world challenges with data-backed solutions. I thrive on turning raw data into meaningful narratives that empower organizations to make smarter, faster decisions
         </p>
     </section>
-
+    
     <!-- Education -->
-    <section class="section">
-        <h2 class="text-3xl font-semibold">Education</h2>
-        <ul class="space-y-6 mt-6">
+    <section id="education" class="section">
+        <h2 class="text-3xl font-semibold color-theme">Education</h2>
+        <ul class="mt-4">
             <li class="p-6 rounded-lg shadow-lg border border-blue-500 transition-all">
                 <h3 class="text-2xl font-bold text-blue-400">Bachelor of Business Administration</h3>
                 <p class="text-gray-400 mt-2">Faculty of Management, Economics, and Business Technology</p>
@@ -90,8 +119,8 @@
 
 
     <!-- Skills -->
-    <section class="section">
-        <h2 class="text-3xl font-semibold">Skills</h2>
+    <section id="skills" class="section">
+        <h2 class="text-3xl font-semibold color-theme">Skills</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
             <!-- Technical Skills -->
             <div class="border border-blue-500 p-6 rounded-lg shadow-lg bg-gray-800 transition-all hover:shadow-xl">
@@ -119,8 +148,8 @@
 
     
     <!-- Work Experience -->
-    <section class="section">
-        <h2 class="text-3xl font-semibold">Work Experience</h2>
+    <section id="work-experience" class="section">
+        <h2 class="text-3xl font-semibold color-theme">Work Experience</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
             <!-- Experience 1 -->
             <div class="border border-blue-500 p-6 rounded-lg shadow-lg bg-gray-800 transition-all hover:shadow-xl">
@@ -155,8 +184,9 @@
 
 
     <!-- Offered Services -->
-    <section class="section">
-        <h2 class="text-3xl font-semibold">Offered Services</h2>
+    
+    <section id="Offered Services" class="section">
+            <h2 class="text-3xl font-semibold color-theme">Offered Services</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         
         </p>
@@ -188,8 +218,8 @@
     </section>
     
 <!-- Projects Section -->
-<section class="section py-12">
-    <h2 class="text-3xl font-semibold text-center">Projects</h2>
+<section id="projects" class="section">
+    <h2 class="text-3xl font-semibold color-theme">Projects</h2>
     <p class="text-sm text-gray-400 mb-6 text-center">Click on a project title to toggle its description.</p>
     
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
@@ -342,9 +372,9 @@
     
 
     <!-- Contact Me -->
-    <section id="contact-me" class="section py-12 ">
-        <h2 class="text-4xl font-bold text-white text-center mb-6">Get in Touch</h2>
-        <p class="text-lg text-gray-300 text-center mb-8">
+    <section id="contact-me" class="section">
+        <h2 class="text-3xl font-semibold color-theme text-center">Get in Touch</h2>
+        <p class="text-xl text-gray-300 text-center mb-8">
             Ready to collaborate? Let’s create impactful solutions together!
         </p>
         <div class="max-w-3xl mx-auto bg-gray-800 p-6 rounded-lg shadow-lg border-4 border-blue-500">
@@ -378,6 +408,91 @@
     </section>
     
     
+    <<script>
+        // JavaScript for changing all blue-related elements dynamically
+        const colorPicker = document.getElementById('color-picker');
+        
+        colorPicker.addEventListener('change', function() {
+            const selectedColor = colorPicker.value;
+            const body = document.body;
+            const sections = document.querySelectorAll('.section');
+            const headings = document.querySelectorAll('h1, h2, h3');
+            const links = document.querySelectorAll('a[data-color="blue"]');
+            const buttons = document.querySelectorAll('.btn');
+            
+            // Change background color of the body based on the selected option
+            if (selectedColor === 'blue') {
+                body.style.backgroundColor = '#121212';
+                body.style.color = '#e0e0e0';
+                sections.forEach(section => {
+                    section.style.backgroundColor = '#1f2937';
+                });
+                headings.forEach(heading => {
+                    heading.style.color = '#4f46e5';
+                });
+                links.forEach(link => {
+                    link.classList.remove('hover:text-blue-500');
+                    link.classList.add('hover:text-blue-600');
+                });
+                buttons.forEach(button => {
+                    button.style.backgroundColor = '#4f46e5';
+                    button.style.color = '#fff';
+                    button.classList.remove('btn-hover');
+                });
+            } else if (selectedColor === 'red') {
+                body.style.backgroundColor = '#2c1a1a';
+                body.style.color = '#f5f5f5';
+                sections.forEach(section => {
+                    section.style.backgroundColor = '#3b1d1d';
+                });
+                headings.forEach(heading => {
+                    heading.style.color = '#e11d48';
+                });
+                links.forEach(link => {
+                    link.classList.remove('hover:text-blue-500');
+                    link.classList.add('hover:text-red-500');
+                });
+                buttons.forEach(button => {
+                    button.style.backgroundColor = '#e11d48';
+                    button.style.color = '#fff';
+                });
+            } else if (selectedColor === 'green') {
+                body.style.backgroundColor = '#1a2c1a';
+                body.style.color = '#e0e0e0';
+                sections.forEach(section => {
+                    section.style.backgroundColor = '#1e3d1e';
+                });
+                headings.forEach(heading => {
+                    heading.style.color = '#10b981';
+                });
+                links.forEach(link => {
+                    link.classList.remove('hover:text-blue-500');
+                    link.classList.add('hover:text-green-500');
+                });
+                buttons.forEach(button => {
+                    button.style.backgroundColor = '#10b981';
+                    button.style.color = '#fff';
+                });
+            } else if (selectedColor === 'purple') {
+                body.style.backgroundColor = '#2e1a57';
+                body.style.color = '#e0e0e0';
+                sections.forEach(section => {
+                    section.style.backgroundColor = '#3e1b6e';
+                });
+                headings.forEach(heading => {
+                    heading.style.color = '#8b5cf6';
+                });
+                links.forEach(link => {
+                    link.classList.remove('hover:text-blue-500');
+                    link.classList.add('hover:text-purple-500');
+                });
+                buttons.forEach(button => {
+                    button.style.backgroundColor = '#8b5cf6';
+                    button.style.color = '#fff';
+                });
+            }
+        });
+    </script>
     
 
     <footer class="text-center py-4">
