@@ -153,25 +153,31 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
             <!-- Experience 1 -->
             <div class="border border-blue-500 p-6 rounded-lg shadow-lg bg-gray-800 transition-all hover:shadow-xl">
-                <h3 class="text-2xl font-bold text-blue-400">Trainee</h3>
-                <p class="text-gray-400 mt-2"><i class="fas fa-building"></i> Telecom Egypt</p>
-                <p class="text-gray-500 mt-4"><strong>Duration:</strong> September 2024</p>
-                
+                <h3 class="text-xl font-bold text-blue-400 cursor-pointer" onclick="toggleDescription(11)">Trainee telecom Egypt</h3>
+                <p class="text-sm text-gray-500 mt-2 mb-4">September 2024</p>
+                <div id="project-11" class="project-description transition-all opacity-0 max-h-0 overflow-hidden" aria-live="polite">
+                    <p>This training equipped me with practical skills in Power BI, focusing on data visualization, analysis, and dashboard creation. I gained hands-on experience with Power Query for data transformation, built interactive reports. Additionally, the training provided an introduction to Big Data concepts. For my final project, I analyzed a dataset, transforming and visualizing the data using Power BI to extract key insights.</p>
+                </div>
+                <button class="text-blue-400 hover:text-blue-600 mt-2 block focus:outline-none" onclick="toggleDescription(11)">Show Description</button>
             </div>
+            
             <!-- Experience 2 -->
             <div class="border border-blue-500 p-6 rounded-lg shadow-lg bg-gray-800 transition-all hover:shadow-xl">
-                <h3 class="text-2xl font-bold text-blue-400">Intern</h3>
-                <p class="text-gray-400 mt-2"><i class="fas fa-building"></i> Information Technology Institute (ITI)</p>
-                <p class="text-gray-500 mt-4"><strong>Duration:</strong> September 2024</p>
-               
+                <h3 class="text-xl font-bold text-blue-400 cursor-pointer" onclick="toggleDescription(12)">Trainee Information Technology Institute (ITI)</h3>
+                <p class="text-sm text-gray-500 mt-2 mb-4">September 2024</p>
+                <div id="project-12" class="project-description transition-all opacity-0 max-h-0 overflow-hidden" aria-live="polite">
+                    <p>This training provided a solid foundation in data management, analysis, and visualization. I gained expertise in Data Warehousing and SQL Server, covering database fundamentals, advanced SQL queries, and data management. I learned to create robust reporting solutions with Microsoft SQL BI (SSRS, SSAS, SSIS), and deepened my statistical analysis skills with an Introduction to Statistics. Additionally, I mastered tools like Power BI, Tableau, and Excel for dynamic data visualization, building interactive dashboards, and presenting insights. This training equipped me with the skills to analyze and communicate complex data effectively, supporting data-driven decision-making.</p>
+                </div>
+                <button class="text-blue-400 hover:text-blue-600 mt-2 block focus:outline-none" onclick="toggleDescription(12)">Show Description</button>
             </div>
+        
             <!-- Experience 3 -->
             <div class="border border-blue-500 p-6 rounded-lg shadow-lg bg-gray-800 transition-all hover:shadow-xl">
                 <h3 class="text-2xl font-bold text-blue-400">Trainee</h3>
                 <p class="text-gray-400 mt-2"><i class="fas fa-building"></i> Talaat Moustafa Group</p>
-                <p class="text-gray-500 mt-4"><strong>Duration:</strong> July 2024 </p>
-                
+                <p class="text-gray-500 mt-4"><strong>Duration:</strong> July 2024</p>
             </div>
+        </div>
             <!-- Experience 4 -->
             <div class="border border-blue-500 p-6 rounded-lg shadow-lg bg-gray-800 transition-all hover:shadow-xl">
                 <h3 class="text-2xl font-bold text-blue-400">Trainee</h3>
@@ -325,11 +331,13 @@
     </div>
 </section>
 
+
 <script>
     // Toggle project description with fade-in effect
     function toggleDescription(projectId) {
         const projectDescription = document.getElementById(`project-${projectId}`);
-        const toggleButton = projectDescription.previousElementSibling;
+        const toggleButton = projectDescription.nextElementSibling; // Button should be after the description
+
         if (projectDescription.style.maxHeight === '0px' || projectDescription.style.maxHeight === '') {
             projectDescription.style.maxHeight = '500px'; // Set to a large enough value to reveal content
             projectDescription.style.opacity = '1';
